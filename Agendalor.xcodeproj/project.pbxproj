@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F2496DD14F91D893C3790E9 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D13608D90A55FCCD1A50993C /* Lottie */; };
+		33652BA59C2FC5825C384016 /* AgendalorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132096E23722E37DDB8D82C6 /* AgendalorTests.swift */; };
+		52E9BE8EBF0025CAC7DFB9A6 /* project.yml in Resources */ = {isa = PBXBuildFile; fileRef = 7B7E79CFEF2E01FFE3BAFCCC /* project.yml */; };
+		5DE9152BB53C0BE8C8AC8950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F9BA1C51F3CAC33D06C6AD /* Assets.xcassets */; };
+		9743642620F0E1DA6E5BDB6F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A4B6BE7FA8CB80BD9D900 /* DataModel.swift */; };
+		B0A5F8C64EAAB358C81D64F6 /* AgendalorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC64F06271355DE2194668F /* AgendalorApp.swift */; };
+		EC9CE660C9FB0815C2B6F0EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C9D99C0D5E66F7CEF3D49 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		605A93E30240D338D290A63A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28D8450E5B565BADD0D5A61A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC01319EE349EAC77636CD22;
+			remoteInfo = Agendalor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		132096E23722E37DDB8D82C6 /* AgendalorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendalorTests.swift; sourceTree = "<group>"; };
+		6DC64F06271355DE2194668F /* AgendalorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendalorApp.swift; sourceTree = "<group>"; };
+		7B7E79CFEF2E01FFE3BAFCCC /* project.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = project.yml; sourceTree = "<group>"; };
+		7E3C9D99C0D5E66F7CEF3D49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		806A4B6BE7FA8CB80BD9D900 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		88F9BA1C51F3CAC33D06C6AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BF90181342F80AB1A06A850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E353E39A11AA54C418065F94 /* Agendalor.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Agendalor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E503D5D270F70958755EDD51 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		FE17B83C394A05EFF2C4A099 /* AgendalorTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = AgendalorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FF474F7F2CD1F3D600703903 /* Screen */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Screen; sourceTree = "<group>"; };
+		FF474F842CD1F6EC00703903 /* Entity */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Entity; sourceTree = "<group>"; };
+		FF474F862CD1F73100703903 /* SwiftData */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = SwiftData; sourceTree = "<group>"; };
+		FF474F8A2CD22A0300703903 /* ViewModel */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModel; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B45BE944915F248438949ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2496DD14F91D893C3790E9 /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40D0B6D1965E46AB3084CD50 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				806A4B6BE7FA8CB80BD9D900 /* DataModel.swift */,
+				FF474F862CD1F73100703903 /* SwiftData */,
+				FF474F842CD1F6EC00703903 /* Entity */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		5548875802D67222280D62CB = {
+			isa = PBXGroup;
+			children = (
+				E503D5D270F70958755EDD51 /* .gitignore */,
+				7B7E79CFEF2E01FFE3BAFCCC /* project.yml */,
+				56ACF8EC2C08A3245FA1AD07 /* Agendalor */,
+				747C6732627346230A499425 /* AgendalorTests */,
+				B90985EC73BE80D57FF339A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		56ACF8EC2C08A3245FA1AD07 /* Agendalor */ = {
+			isa = PBXGroup;
+			children = (
+				6DC64F06271355DE2194668F /* AgendalorApp.swift */,
+				88F9BA1C51F3CAC33D06C6AD /* Assets.xcassets */,
+				9BF90181342F80AB1A06A850 /* Info.plist */,
+				FA709E3C0B47C102F05952D7 /* Preview Content */,
+				40D0B6D1965E46AB3084CD50 /* Shared */,
+				FF474F7F2CD1F3D600703903 /* Screen */,
+				FF474F8A2CD22A0300703903 /* ViewModel */,
+			);
+			path = Agendalor;
+			sourceTree = "<group>";
+		};
+		747C6732627346230A499425 /* AgendalorTests */ = {
+			isa = PBXGroup;
+			children = (
+				132096E23722E37DDB8D82C6 /* AgendalorTests.swift */,
+			);
+			path = AgendalorTests;
+			sourceTree = "<group>";
+		};
+		B90985EC73BE80D57FF339A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E353E39A11AA54C418065F94 /* Agendalor.app */,
+				FE17B83C394A05EFF2C4A099 /* AgendalorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA709E3C0B47C102F05952D7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7E3C9D99C0D5E66F7CEF3D49 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19D043EDDE15D87FA549BB43 /* AgendalorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70AC6E05AC56B6EAAE851C7F /* Build configuration list for PBXNativeTarget "AgendalorTests" */;
+			buildPhases = (
+				0B17480642440C45487B1FAE /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B39E6564E23B14EB10D222E /* PBXTargetDependency */,
+			);
+			name = AgendalorTests;
+			productName = AgendalorTests;
+			productReference = FE17B83C394A05EFF2C4A099 /* AgendalorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC01319EE349EAC77636CD22 /* Agendalor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11C26B46B0A5C73338655185 /* Build configuration list for PBXNativeTarget "Agendalor" */;
+			buildPhases = (
+				6CC5096A98F7AD8C37FE587C /* Sources */,
+				2414F160F377A20938FFDEDD /* Resources */,
+				3B45BE944915F248438949ED /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FF474F7F2CD1F3D600703903 /* Screen */,
+				FF474F842CD1F6EC00703903 /* Entity */,
+				FF474F862CD1F73100703903 /* SwiftData */,
+				FF474F8A2CD22A0300703903 /* ViewModel */,
+			);
+			name = Agendalor;
+			packageProductDependencies = (
+				D13608D90A55FCCD1A50993C /* Lottie */,
+			);
+			productName = Agendalor;
+			productReference = E353E39A11AA54C418065F94 /* Agendalor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28D8450E5B565BADD0D5A61A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EC01319EE349EAC77636CD22 = {
+						DevelopmentTeam = algoria;
+					};
+				};
+			};
+			buildConfigurationList = 14B3FD6AFB065322DAD8E083 /* Build configuration list for PBXProject "Agendalor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ja;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ja,
+			);
+			mainGroup = 5548875802D67222280D62CB;
+			packageReferences = (
+				E394058BC0257E222517101B /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC01319EE349EAC77636CD22 /* Agendalor */,
+				19D043EDDE15D87FA549BB43 /* AgendalorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2414F160F377A20938FFDEDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DE9152BB53C0BE8C8AC8950 /* Assets.xcassets in Resources */,
+				EC9CE660C9FB0815C2B6F0EA /* Preview Assets.xcassets in Resources */,
+				52E9BE8EBF0025CAC7DFB9A6 /* project.yml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B17480642440C45487B1FAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33652BA59C2FC5825C384016 /* AgendalorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CC5096A98F7AD8C37FE587C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0A5F8C64EAAB358C81D64F6 /* AgendalorApp.swift in Sources */,
+				9743642620F0E1DA6E5BDB6F /* DataModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B39E6564E23B14EB10D222E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC01319EE349EAC77636CD22 /* Agendalor */;
+			targetProxy = 605A93E30240D338D290A63A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0376C512A8CBD5F96862FA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Agendalor.AgendalorTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Agendalor.app/Agendalor";
+			};
+			name = Debug;
+		};
+		07077F09B6183250F1111012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4E30AEF33D6FBC18C8B31251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = algoria;
+				INFOPLIST_FILE = Agendalor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = algoria.Agendalor;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A8F4D63C1B65AAA30DFF6721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = algoria;
+				INFOPLIST_FILE = Agendalor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = algoria.Agendalor;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1CF75F07DC394345CB0F418 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Agendalor.AgendalorTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Agendalor.app/Agendalor";
+			};
+			name = Release;
+		};
+		EF1DD55D1EC5B962F787F1ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11C26B46B0A5C73338655185 /* Build configuration list for PBXNativeTarget "Agendalor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8F4D63C1B65AAA30DFF6721 /* Debug */,
+				4E30AEF33D6FBC18C8B31251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		14B3FD6AFB065322DAD8E083 /* Build configuration list for PBXProject "Agendalor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF1DD55D1EC5B962F787F1ED /* Debug */,
+				07077F09B6183250F1111012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		70AC6E05AC56B6EAAE851C7F /* Build configuration list for PBXNativeTarget "AgendalorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0376C512A8CBD5F96862FA37 /* Debug */,
+				B1CF75F07DC394345CB0F418 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E394058BC0257E222517101B /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D13608D90A55FCCD1A50993C /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E394058BC0257E222517101B /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 28D8450E5B565BADD0D5A61A /* Project object */;
+}
