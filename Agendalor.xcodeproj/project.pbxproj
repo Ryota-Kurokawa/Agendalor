@@ -34,7 +34,7 @@
 		806A4B6BE7FA8CB80BD9D900 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		88F9BA1C51F3CAC33D06C6AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BF90181342F80AB1A06A850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		E353E39A11AA54C418065F94 /* Agendalor.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Agendalor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E353E39A11AA54C418065F94 /* Agendalor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agendalor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E503D5D270F70958755EDD51 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		FE17B83C394A05EFF2C4A099 /* AgendalorTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = AgendalorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -171,11 +171,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
-				TargetAttributes = {
-					EC01319EE349EAC77636CD22 = {
-						DevelopmentTeam = algoria;
-					};
-				};
 			};
 			buildConfigurationList = 14B3FD6AFB065322DAD8E083 /* Build configuration list for PBXProject "Agendalor" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -317,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = algoria;
+				DEVELOPMENT_TEAM = 37BC8RS2XN;
 				INFOPLIST_FILE = Agendalor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -342,7 +337,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = algoria;
+				DEVELOPMENT_TEAM = 37BC8RS2XN;
 				INFOPLIST_FILE = Agendalor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (

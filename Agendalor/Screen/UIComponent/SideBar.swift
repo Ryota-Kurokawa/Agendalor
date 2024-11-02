@@ -34,7 +34,6 @@ struct SideBar: View {
             List(minutesList) { minutes in
                 NavigationTile(title: minutes.title, systemImage: minutes.icon, createdAt: minutes.createdAt)
             }
-            .navigationTitle("Agendalor")
         }
     }
 }
@@ -46,17 +45,19 @@ extension SideBar {
         let createdAt: Date
         
         var body: some View {
-            HStack {
-                Image(systemName: systemImage)
-                    .resizable()
-                    .frame(width: 20, height: 20)
-                Text(title)
-                    .font(.title2)
-                    .fontWeight(.semibold)
-                    .lineLimit(2)
-                    .padding(.leading, 16)
-                Spacer()
-                VStack {
+            VStack {
+                HStack {
+                    Image(systemName: systemImage)
+                        .resizable()
+                        .frame(width: 16, height: 16)
+                    Text(title)
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        .lineLimit(2)
+                        .padding(.leading, 16)
+                    Spacer()
+                }
+                HStack {
                     Spacer()
                     Text(createdAt, style: .date)
                         .font(.caption)
@@ -67,7 +68,6 @@ extension SideBar {
                         .padding(.bottom, 4)
                 }
             }
-            .padding(.vertical, 8)
         }
     }
 }

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct RecordingScreen: View {
     @State var isPressed: Bool = false
+    @State var isRecordingCompleted: Bool = false
+    @State var isCheckedForCompletion: Bool = false
     
     var body: some View {
         VStack {
@@ -16,15 +18,16 @@ struct RecordingScreen: View {
                 Text("Recording")
                     .font(.title)
                     .fontWeight(.bold)
-                    .padding(.top, 32)
+                    .padding(.top, 100)
                     .transition(.identity)
                 Spacer()
                 LottieView(filename: "Recording")
-                    .frame(width: 400, height: 400)
+                    .frame(width: 200, height: 200)
                     .transition(.scale)
                     .onTapGesture {
                         withAnimation {
                             isPressed.toggle()
+                            isRecordingCompleted.toggle()
                         }
                     }
                 Spacer()
@@ -32,7 +35,7 @@ struct RecordingScreen: View {
                 Text("No Recording")
                     .font(.title)
                     .fontWeight(.bold)
-                    .padding(.top, 32)
+                    .padding(.top, 100)
                     .transition(.identity)
                 Spacer()
                 Image(systemName: "mic.slash")
@@ -47,6 +50,16 @@ struct RecordingScreen: View {
                     }
                 Spacer()
             }
+        }
+        .alert(isPresented: $isRecordingCompleted) {
+            Alert(title: Text("Recording Completed"), message: Text("Would you like to save the recording?"), primaryButton: .default(Text("Save"), action: {
+                isCheckedForCompletion = true
+            }), secondaryButton: .cancel(Text("Cancel"), action: {
+                isRecordingCompleted = false
+            }))
+        }
+        .navigationDestination(isPresented: $isCheckedForCompletion) {
+            SampleScreen()
         }
     }
     
