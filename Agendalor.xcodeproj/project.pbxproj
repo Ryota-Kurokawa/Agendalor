@@ -3,17 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0F2496DD14F91D893C3790E9 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D13608D90A55FCCD1A50993C /* Lottie */; };
 		33652BA59C2FC5825C384016 /* AgendalorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132096E23722E37DDB8D82C6 /* AgendalorTests.swift */; };
+		511225887F9002E9667E0AB2 /* MinutesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB5675D1F535409CC13F9C /* MinutesViewModel.swift */; };
 		52E9BE8EBF0025CAC7DFB9A6 /* project.yml in Resources */ = {isa = PBXBuildFile; fileRef = 7B7E79CFEF2E01FFE3BAFCCC /* project.yml */; };
 		5DE9152BB53C0BE8C8AC8950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F9BA1C51F3CAC33D06C6AD /* Assets.xcassets */; };
+		5F0D790149C6A987C87E7911 /* Minutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278F923281D44361AC1C7CDA /* Minutes.swift */; };
+		6826D007D2AB9BA207285D1A /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530AF3B9FD571BA9334D114D /* DetailScreen.swift */; };
+		729C8E28ECD99B4E01A8B393 /* RecordingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474847AA95BAD5524F2C8BB2 /* RecordingScreen.swift */; };
+		83BA9587F90644681D7CD774 /* Recording.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BAE5808AA39FC2EF7B59B7A /* Recording.json */; };
 		9743642620F0E1DA6E5BDB6F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A4B6BE7FA8CB80BD9D900 /* DataModel.swift */; };
 		B0A5F8C64EAAB358C81D64F6 /* AgendalorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC64F06271355DE2194668F /* AgendalorApp.swift */; };
+		C20C6E76BF35C49C550249B7 /* Agenda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E9C99E0A012F74A2A563BA /* Agenda.swift */; };
+		C632A50D56FFCA5FE5C81959 /* customGestureModifire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB366D09A61426DAA4DA62C /* customGestureModifire.swift */; };
+		C8A0E003238C5CC56626697B /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58537044506AA1BAE8BA895C /* LottieView.swift */; };
+		CFAC71A9A3407775313F8F03 /* SampleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB7BF8E94E4B211656F2225 /* SampleScreen.swift */; };
+		D2EB47BC88389BFEBA78E4A2 /* ContentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E54D906BD76AEDFFEEE84 /* ContentScreen.swift */; };
+		D381AB87F3B05BC00A571037 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95DB56E16E48CBCDDCF80D4 /* SideBar.swift */; };
 		EC9CE660C9FB0815C2B6F0EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C9D99C0D5E66F7CEF3D49 /* Preview Assets.xcassets */; };
+		FFC60C962CDC93EF006A4046 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC60C952CDC93EF006A4046 /* SpeechRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,23 +40,28 @@
 
 /* Begin PBXFileReference section */
 		132096E23722E37DDB8D82C6 /* AgendalorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendalorTests.swift; sourceTree = "<group>"; };
+		278F923281D44361AC1C7CDA /* Minutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minutes.swift; sourceTree = "<group>"; };
+		32E9C99E0A012F74A2A563BA /* Agenda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agenda.swift; sourceTree = "<group>"; };
+		474847AA95BAD5524F2C8BB2 /* RecordingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingScreen.swift; sourceTree = "<group>"; };
+		486E54D906BD76AEDFFEEE84 /* ContentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentScreen.swift; sourceTree = "<group>"; };
+		530AF3B9FD571BA9334D114D /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		58537044506AA1BAE8BA895C /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		6DC64F06271355DE2194668F /* AgendalorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendalorApp.swift; sourceTree = "<group>"; };
 		7B7E79CFEF2E01FFE3BAFCCC /* project.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = project.yml; sourceTree = "<group>"; };
 		7E3C9D99C0D5E66F7CEF3D49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7FB366D09A61426DAA4DA62C /* customGestureModifire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customGestureModifire.swift; sourceTree = "<group>"; };
+		7FEB5675D1F535409CC13F9C /* MinutesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinutesViewModel.swift; sourceTree = "<group>"; };
 		806A4B6BE7FA8CB80BD9D900 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		88F9BA1C51F3CAC33D06C6AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BAE5808AA39FC2EF7B59B7A /* Recording.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Recording.json; sourceTree = "<group>"; };
 		9BF90181342F80AB1A06A850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		E353E39A11AA54C418065F94 /* Agendalor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agendalor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E353E39A11AA54C418065F94 /* Agendalor.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Agendalor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E503D5D270F70958755EDD51 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F95DB56E16E48CBCDDCF80D4 /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
 		FE17B83C394A05EFF2C4A099 /* AgendalorTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = AgendalorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB7BF8E94E4B211656F2225 /* SampleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleScreen.swift; sourceTree = "<group>"; };
+		FFC60C952CDC93EF006A4046 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		FF474F7F2CD1F3D600703903 /* Screen */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Screen; sourceTree = "<group>"; };
-		FF474F842CD1F6EC00703903 /* Entity */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Entity; sourceTree = "<group>"; };
-		FF474F862CD1F73100703903 /* SwiftData */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = SwiftData; sourceTree = "<group>"; };
-		FF474F8A2CD22A0300703903 /* ViewModel */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModel; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3B45BE944915F248438949ED /* Frameworks */ = {
@@ -58,12 +75,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17CBC4CA77C147177D79DEDF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				32E9C99E0A012F74A2A563BA /* Agenda.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		1D9688FE6C842D10EEB17DBB /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				58537044506AA1BAE8BA895C /* LottieView.swift */,
+				9BAE5808AA39FC2EF7B59B7A /* Recording.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
 		40D0B6D1965E46AB3084CD50 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				FFC60C952CDC93EF006A4046 /* SpeechRecognizer.swift */,
 				806A4B6BE7FA8CB80BD9D900 /* DataModel.swift */,
-				FF474F862CD1F73100703903 /* SwiftData */,
-				FF474F842CD1F6EC00703903 /* Entity */,
+				17CBC4CA77C147177D79DEDF /* Entity */,
+				6D149ABACD3D2BDEE63D301E /* SwiftData */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -86,11 +121,27 @@
 				88F9BA1C51F3CAC33D06C6AD /* Assets.xcassets */,
 				9BF90181342F80AB1A06A850 /* Info.plist */,
 				FA709E3C0B47C102F05952D7 /* Preview Content */,
+				898A8D18D730971B11AB80B4 /* Screen */,
 				40D0B6D1965E46AB3084CD50 /* Shared */,
-				FF474F7F2CD1F3D600703903 /* Screen */,
-				FF474F8A2CD22A0300703903 /* ViewModel */,
+				78D7FB3B81C6922995AC903B /* ViewModel */,
 			);
 			path = Agendalor;
+			sourceTree = "<group>";
+		};
+		68C6E9431E44F6B86A97785A /* CustomModifire */ = {
+			isa = PBXGroup;
+			children = (
+				7FB366D09A61426DAA4DA62C /* customGestureModifire.swift */,
+			);
+			path = CustomModifire;
+			sourceTree = "<group>";
+		};
+		6D149ABACD3D2BDEE63D301E /* SwiftData */ = {
+			isa = PBXGroup;
+			children = (
+				278F923281D44361AC1C7CDA /* Minutes.swift */,
+			);
+			path = SwiftData;
 			sourceTree = "<group>";
 		};
 		747C6732627346230A499425 /* AgendalorTests */ = {
@@ -99,6 +150,36 @@
 				132096E23722E37DDB8D82C6 /* AgendalorTests.swift */,
 			);
 			path = AgendalorTests;
+			sourceTree = "<group>";
+		};
+		78D7FB3B81C6922995AC903B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7FEB5675D1F535409CC13F9C /* MinutesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		898A8D18D730971B11AB80B4 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				486E54D906BD76AEDFFEEE84 /* ContentScreen.swift */,
+				530AF3B9FD571BA9334D114D /* DetailScreen.swift */,
+				474847AA95BAD5524F2C8BB2 /* RecordingScreen.swift */,
+				FFB7BF8E94E4B211656F2225 /* SampleScreen.swift */,
+				68C6E9431E44F6B86A97785A /* CustomModifire */,
+				1D9688FE6C842D10EEB17DBB /* Lottie */,
+				91237896CEB28BA0DBE1447F /* UIComponent */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		91237896CEB28BA0DBE1447F /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				F95DB56E16E48CBCDDCF80D4 /* SideBar.swift */,
+			);
+			path = UIComponent;
 			sourceTree = "<group>";
 		};
 		B90985EC73BE80D57FF339A0 /* Products */ = {
@@ -149,12 +230,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				FF474F7F2CD1F3D600703903 /* Screen */,
-				FF474F842CD1F6EC00703903 /* Entity */,
-				FF474F862CD1F73100703903 /* SwiftData */,
-				FF474F8A2CD22A0300703903 /* ViewModel */,
-			);
 			name = Agendalor;
 			packageProductDependencies = (
 				D13608D90A55FCCD1A50993C /* Lottie */,
@@ -171,6 +246,11 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EC01319EE349EAC77636CD22 = {
+						DevelopmentTeam = algoria;
+					};
+				};
 			};
 			buildConfigurationList = 14B3FD6AFB065322DAD8E083 /* Build configuration list for PBXProject "Agendalor" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -200,6 +280,7 @@
 			files = (
 				5DE9152BB53C0BE8C8AC8950 /* Assets.xcassets in Resources */,
 				EC9CE660C9FB0815C2B6F0EA /* Preview Assets.xcassets in Resources */,
+				83BA9587F90644681D7CD774 /* Recording.json in Resources */,
 				52E9BE8EBF0025CAC7DFB9A6 /* project.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +300,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C20C6E76BF35C49C550249B7 /* Agenda.swift in Sources */,
 				B0A5F8C64EAAB358C81D64F6 /* AgendalorApp.swift in Sources */,
+				D2EB47BC88389BFEBA78E4A2 /* ContentScreen.swift in Sources */,
 				9743642620F0E1DA6E5BDB6F /* DataModel.swift in Sources */,
+				6826D007D2AB9BA207285D1A /* DetailScreen.swift in Sources */,
+				C8A0E003238C5CC56626697B /* LottieView.swift in Sources */,
+				5F0D790149C6A987C87E7911 /* Minutes.swift in Sources */,
+				511225887F9002E9667E0AB2 /* MinutesViewModel.swift in Sources */,
+				729C8E28ECD99B4E01A8B393 /* RecordingScreen.swift in Sources */,
+				CFAC71A9A3407775313F8F03 /* SampleScreen.swift in Sources */,
+				FFC60C962CDC93EF006A4046 /* SpeechRecognizer.swift in Sources */,
+				D381AB87F3B05BC00A571037 /* SideBar.swift in Sources */,
+				C632A50D56FFCA5FE5C81959 /* customGestureModifire.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +404,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 37BC8RS2XN;
+				DEVELOPMENT_TEAM = algoria;
 				INFOPLIST_FILE = Agendalor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -337,7 +429,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 37BC8RS2XN;
+				DEVELOPMENT_TEAM = algoria;
 				INFOPLIST_FILE = Agendalor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (

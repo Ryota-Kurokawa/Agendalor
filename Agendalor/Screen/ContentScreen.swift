@@ -17,7 +17,7 @@ struct ContentScreen: View {
         NavigationStack {
             GeometryReader {
                 let size = $0.size
-                let sideBarWidth: CGFloat = 240
+                let sideBarWidth: CGFloat = size.width * 0.9
                 
                 ZStack(alignment: .leading) {
                     SideBar()
@@ -28,6 +28,7 @@ struct ContentScreen: View {
                         .offset(x: sideBarWidth * progress)
                         .offset(x: size.width / 4)
                 }
+                .contentShape(Rectangle())
                 .gesture(DragGesture()
                     .onChanged { value in
                         let translation = value.translation.width + lastDragOffset
@@ -36,16 +37,15 @@ struct ContentScreen: View {
                     }
                     .onEnded { value in
                         let velocity = value.predictedEndTranslation.width / 3
-                        
-                        withAnimation(.snappy(duration: 0.25, extraBounce: 0)) {
+                        withAnimation(.interactiveSpring(response: 0.3, dampingFraction: 0.7, blendDuration: 0.5)) {
                             if (velocity * offset) > (sideBarWidth / 2) {
                                 offset = sideBarWidth
                                 progress = 1
-                                isShowingSideBar.toggle()
+                                isShowingSideBar = true
                             } else if velocity < 0 {
                                 offset = 0
                                 progress = 0
-                                isShowingSideBar.toggle()
+                                isShowingSideBar = false
                             } else {
                                 offset = 0
                                 progress = 0
@@ -61,23 +61,23 @@ struct ContentScreen: View {
                                 withAnimation {
                                     offset = sideBarWidth
                                     progress = 1
-                                    isShowingSideBar.toggle()
                                 }
                             } else {
                                 withAnimation {
                                     offset = 0
                                     progress = 0
-                                    isShowingSideBar.toggle()
                                 }
                             }
+                            isShowingSideBar.toggle()
+                            lastDragOffset = offset
                         } label: {
                             if isShowingSideBar {
-                                Image(systemName: "multiply")
+                                Text("Back")
                                     .font(.title3)
                                     .opacity(0.5)
                                     .transition(.scale)
                             } else {
-                                Image(systemName: "line.horizontal.3")
+                                Image(systemName: "folder")
                                     .font(.title3)
                                     .transition(.scale)
                             }
@@ -86,7 +86,6 @@ struct ContentScreen: View {
                     }
                 }
             }
-//            .ignoresSafeArea()
         }
     }
 }

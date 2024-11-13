@@ -8,31 +8,14 @@
 import SwiftUI
 
 struct SideBar: View {
-    let minutesList: [Minutes] = [Minutes(title: "Meeting 1", icon: "calendar", createdAt: Date(), agenda: []),
-                                  Minutes(title: "Meeting 2", icon: "calendar", createdAt: Date(), agenda: []),
-                                  Minutes(title: "Meeting 3", icon: "calendar", createdAt: Date(), agenda: []),
-                                  Minutes(title: "Meeting 4", icon: "calendar", createdAt: Date(), agenda: []),
-                                  Minutes(title: "Meeting 5", icon: "calendar", createdAt: Date(), agenda: []),
-                                  Minutes(title: "Meeting 6", icon: "calendar", createdAt: Date(), agenda: []),
-                                  Minutes(title: "Meeting 7", icon: "calendar", createdAt: Date(), agenda: []),
-                                  Minutes(title: "Meeting 8", icon: "calendar", createdAt: Date(), agenda: []),
-                                  Minutes(title: "Meeting 9", icon: "calendar", createdAt: Date(), agenda: []),
-                                  Minutes(title: "Meeting 10", icon: "calendar", createdAt: Date(), agenda: []),
-                                  Minutes(title: "Meeting 11", icon: "calendar", createdAt: Date(), agenda: []),
-                                  Minutes(title: "Meeting 12", icon: "calendar", createdAt: Date(), agenda: []),
-                                  Minutes(title: "Meeting 13", icon: "calendar", createdAt: Date(), agenda: []),
-                                  Minutes(title: "Meeting 14", icon: "calendar", createdAt: Date(), agenda: []),
-                                  Minutes(title: "Meeting 15", icon: "calendar", createdAt: Date(), agenda: []),
-                                  Minutes(title: "Meeting 16", icon: "calendar", createdAt: Date(), agenda: []),
-                                  Minutes(title: "Meeting 17", icon: "calendar", createdAt: Date(), agenda: []),
-                                  Minutes(title: "Meeting 18", icon: "calendar", createdAt: Date(), agenda: []),
-                                  Minutes(title: "Meeting 19", icon: "calendar", createdAt: Date(), agenda: []),
-                                  Minutes(title: "Meeting 20", icon: "calendar", createdAt: Date(), agenda: [])]
+    let minutesList = [Minutes(title: "Mobile App デイリー", icon: "paperplane", createdAt: Date(), agenda: [Agenda(section: "評価制度の見直しについて", description: "色々かんがえたんですがやっぱり実力主義の方がいいのではないでしょうか？　いや，そんなことはない，わしゃあ年功序列がいいと思うんじゃぁ")]), Minutes(title: "本日のWeekly", icon: "paperplane", createdAt: Date(), agenda: [Agenda(section: "評価制度の見直しについて", description: "色々かんがえたんですがやっぱり実力主義の方がいいのではないでしょうか？　いや，そんなことはない，わしゃあ年功序列がいいと思うんじゃぁ")]), Minutes(title: "本日のWeekly", icon: "paperplane", createdAt: Date(), agenda: [Agenda(section: "評価制度の見直しについて", description: "色々かんがえたんですがやっぱり実力主義の方がいいのではないでしょうか？　いや，そんなことはない，わしゃあ年功序列がいいと思うんじゃぁ")])]
     
     var body: some View {
         NavigationStack {
             List(minutesList) { minutes in
-                NavigationTile(title: minutes.title, systemImage: minutes.icon, createdAt: minutes.createdAt)
+                NavigationLink(destination: DetailScreen(minutes: minutes)) {
+                    NavigationTile(title: minutes.title, systemImage: minutes.icon, createdAt: minutes.createdAt)
+                }
             }
         }
     }

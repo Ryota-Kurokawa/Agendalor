@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Agenda: Codable {
+struct Agenda: Codable, Hashable {
     var section: String
     var description: String
     

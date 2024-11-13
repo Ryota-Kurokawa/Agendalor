@@ -69,6 +69,8 @@ targets:
           - UIInterfaceOrientationLandscapeLeft
           - UIInterfaceOrientationLandscapeRight
         UIUserInterfaceStyle: Light
+        NSMicrophoneUsageDescription: "マイクへのアクセスを許可してください。"
+        NSSpeechRecognitionUsageDescription: "音声認識のアクセスを許可してください。"
 
   AgendalorTests:
     type: bundle.unit-test
