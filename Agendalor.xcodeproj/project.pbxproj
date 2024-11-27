@@ -11,6 +11,7 @@
 		33652BA59C2FC5825C384016 /* AgendalorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132096E23722E37DDB8D82C6 /* AgendalorTests.swift */; };
 		511225887F9002E9667E0AB2 /* MinutesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB5675D1F535409CC13F9C /* MinutesViewModel.swift */; };
 		52E9BE8EBF0025CAC7DFB9A6 /* project.yml in Resources */ = {isa = PBXBuildFile; fileRef = 7B7E79CFEF2E01FFE3BAFCCC /* project.yml */; };
+		542952FBA40395A3CDFD8A73 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464D8D3BE2957D952986A3B1 /* SpeechRecognizer.swift */; };
 		5DE9152BB53C0BE8C8AC8950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F9BA1C51F3CAC33D06C6AD /* Assets.xcassets */; };
 		5F0D790149C6A987C87E7911 /* Minutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278F923281D44361AC1C7CDA /* Minutes.swift */; };
 		6826D007D2AB9BA207285D1A /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530AF3B9FD571BA9334D114D /* DetailScreen.swift */; };
@@ -25,7 +26,6 @@
 		D2EB47BC88389BFEBA78E4A2 /* ContentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E54D906BD76AEDFFEEE84 /* ContentScreen.swift */; };
 		D381AB87F3B05BC00A571037 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95DB56E16E48CBCDDCF80D4 /* SideBar.swift */; };
 		EC9CE660C9FB0815C2B6F0EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C9D99C0D5E66F7CEF3D49 /* Preview Assets.xcassets */; };
-		FFC60C962CDC93EF006A4046 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC60C952CDC93EF006A4046 /* SpeechRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +42,7 @@
 		132096E23722E37DDB8D82C6 /* AgendalorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendalorTests.swift; sourceTree = "<group>"; };
 		278F923281D44361AC1C7CDA /* Minutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minutes.swift; sourceTree = "<group>"; };
 		32E9C99E0A012F74A2A563BA /* Agenda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agenda.swift; sourceTree = "<group>"; };
+		464D8D3BE2957D952986A3B1 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		474847AA95BAD5524F2C8BB2 /* RecordingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingScreen.swift; sourceTree = "<group>"; };
 		486E54D906BD76AEDFFEEE84 /* ContentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentScreen.swift; sourceTree = "<group>"; };
 		530AF3B9FD571BA9334D114D /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
@@ -55,12 +56,11 @@
 		88F9BA1C51F3CAC33D06C6AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BAE5808AA39FC2EF7B59B7A /* Recording.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Recording.json; sourceTree = "<group>"; };
 		9BF90181342F80AB1A06A850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		E353E39A11AA54C418065F94 /* Agendalor.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Agendalor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E353E39A11AA54C418065F94 /* Agendalor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agendalor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E503D5D270F70958755EDD51 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F95DB56E16E48CBCDDCF80D4 /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
 		FE17B83C394A05EFF2C4A099 /* AgendalorTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = AgendalorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB7BF8E94E4B211656F2225 /* SampleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleScreen.swift; sourceTree = "<group>"; };
-		FFC60C952CDC93EF006A4046 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +95,8 @@
 		40D0B6D1965E46AB3084CD50 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				FFC60C952CDC93EF006A4046 /* SpeechRecognizer.swift */,
 				806A4B6BE7FA8CB80BD9D900 /* DataModel.swift */,
+				464D8D3BE2957D952986A3B1 /* SpeechRecognizer.swift */,
 				17CBC4CA77C147177D79DEDF /* Entity */,
 				6D149ABACD3D2BDEE63D301E /* SwiftData */,
 			);
@@ -246,11 +246,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
-				TargetAttributes = {
-					EC01319EE349EAC77636CD22 = {
-						DevelopmentTeam = algoria;
-					};
-				};
 			};
 			buildConfigurationList = 14B3FD6AFB065322DAD8E083 /* Build configuration list for PBXProject "Agendalor" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -310,8 +305,8 @@
 				511225887F9002E9667E0AB2 /* MinutesViewModel.swift in Sources */,
 				729C8E28ECD99B4E01A8B393 /* RecordingScreen.swift in Sources */,
 				CFAC71A9A3407775313F8F03 /* SampleScreen.swift in Sources */,
-				FFC60C962CDC93EF006A4046 /* SpeechRecognizer.swift in Sources */,
 				D381AB87F3B05BC00A571037 /* SideBar.swift in Sources */,
+				542952FBA40395A3CDFD8A73 /* SpeechRecognizer.swift in Sources */,
 				C632A50D56FFCA5FE5C81959 /* customGestureModifire.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,7 +399,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = algoria;
+				DEVELOPMENT_TEAM = 37BC8RS2XN;
 				INFOPLIST_FILE = Agendalor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -429,7 +424,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = algoria;
+				DEVELOPMENT_TEAM = 37BC8RS2XN;
 				INFOPLIST_FILE = Agendalor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (

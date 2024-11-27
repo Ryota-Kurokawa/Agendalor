@@ -11,6 +11,7 @@ struct RecordingScreen: View {
     @State var isPressed: Bool = false
     @State var isRecordingCompleted: Bool = false
     @State var isCheckedForCompletion: Bool = false
+    private let speechRecognizer = SpeechRecognizer()
     
     var body: some View {
         VStack {
@@ -47,6 +48,7 @@ struct RecordingScreen: View {
                         withAnimation {
                             isPressed.toggle()
                         }
+                        
                     }
                 Spacer()
             }
@@ -60,6 +62,35 @@ struct RecordingScreen: View {
         }
         .navigationDestination(isPresented: $isCheckedForCompletion) {
             SampleScreen()
+        }
+        .onChange(of: isPressed) { _, newValue in
+            if newValue {
+                // 録音開始
+                Task { @MainActor in
+                    speechRecognizer.requestAuthorization { authorized in
+                        if authorized {
+                            do {
+                                try speechRecognizer.startRecognition { text in
+                                    if let recognizedText = text {
+                                        DispatchQueue.main.async {
+                                            print("Recognized Text: \(recognizedText)")
+                                        }
+                                    }
+                                }
+                            } catch {
+                                DispatchQueue.main.async {
+                                    print("Failed to start recognition: \(error.localizedDescription)")
+                                }
+                            }
+                        } else {
+                            print("Speech recognition permission denied")
+                        }
+                    }
+                }
+            } else {
+                // 録音停止
+                speechRecognizer.stopRecognition()
+            }
         }
     }
     
